@@ -1,0 +1,58 @@
+body,div{font-size:13px;padding:0px;margin:0 auto;font-family:"微软雅黑 Regular', '微软雅黑";}
+
+table{
+	border:0;
+	border-collapse: collapse;	
+}
+
+{
+   padding: 0;
+   margin: 0;
+}
+.maindiv{
+	text-align:center;
+	font-family:'微软雅黑 Regular', '微软雅黑';
+   	margin: 0 auto;
+   	padding:0;
+   	width:100%;
+ }
+ 
+.labelstyle{	 
+	 padding-top:10px;
+	 font-size:14px;	 	 
+}
+ 
+.panelheadcss{
+	font-size:14px;
+	font-family:'微软雅黑 Regular', '微软雅黑';	
+}
+.searchpanelbodycss{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:50px;
+}
+
+label{
+	padding-left:40px;
+	line-height:120%;
+	font-size:15px;
+}
+
+#status{
+	padding-left:340px;
+}
+
+.selectbox{
+   width:21%;
+}
+.input{
+   width:21%;
+}
+
+.searchInput{
+	width:15%;
+}
+
+.searchInput1{
+	width:20%;
+}

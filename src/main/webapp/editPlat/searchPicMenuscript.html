@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图片稿件搜索</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/productPlat.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/平台.png"
+					style="height: 32px; display: inline-block;" /><span
+					style="padding-left: 5px;">生产平台</span></a>
+				<!--<div style="margin-top: 20px;font-size: 20px;margin-left: 500px;position: relative;">
+					<a  href="#" style="text-decoration: none;position: absolute;"><span>生产平台</span></a>
+				<a  href="#" style="text-decoration: none;margin-left: 130px;"><span>分发平台</span></a>
+				</div>-->
+
+
+				<ul class="nav navbar-nav "
+					style="margin-left: 450px; font-size: 20px; position: absolute; margin-top: 10px;">
+					<li><a href="#"><span>通用平台</span></a></li>
+					<li><a href="#"><span>分发平台</span></a></li>
+					<li style="margin-left: 350px; font-size: 14px;" id="changeUser"><a
+						href=""><span class="glyphicon glyphicon-user"></span> admin</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-envelope"
+							style="margin-left: 5px;"></span><br />消息</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-edit"
+							style="margin-left: 20px;"></span><br />修改密码</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-share"
+							style="margin-left: 20px;"></span><br /> 安全退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+
+		<ul class="nav">
+			<li class=""><a href="index.html"><span
+					class="glyphicon glyphicon-dashboard"></span> 导航菜单栏</a></li>
+			<li class="parent ">
+				<ul class="children" id="sub-item-1">
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件上传
+					</a></li>
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件制作
+					</a></li>
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件审核
+					</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--/.sidebar-->
+
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+			    <li class="active">图片稿件搜索</li> 
+			</ol>
+		</div>
+
+		<div class="row"
+			style="margin: 20px auto; padding: 10px; padding-top: 0px; background-color: #ffffff;">
+			<div class="panel panel-default">
+				<div class="panel-heading">图片稿件搜索</div>
+				<div class="panel-body">
+					<form action="" class="form-inline" role="form">
+						<label>检索条件：</label> <input type="text" class="form-control">
+						<button type="submit" class="btn btn-default">搜索</button>
+						<select class="form-control">
+							<option>标签</option>
+							<option>体育</option>
+							<option>文化</option>
+							<option>政治</option>
+						</select> <select class="form-control">
+							<option>尺寸</option>
+							<option>大</option>
+							<option>中</option>
+							<option>小</option>
+						</select> <select class="form-control">
+							<option>颜色</option>
+							<option>赤</option>
+							<option>橙</option>
+							<option>黄</option>
+						</select>
+					</form>
+
+
+					<div class="searchResult" style="margin-top: 20px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+						<img src="img/edit.jpeg"
+							style="width: 190px; margin-right: 15px; margin-bottom: 15px;">
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>

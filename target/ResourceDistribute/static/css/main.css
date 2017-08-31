@@ -1,0 +1,140 @@
+.sidebar-wrap {
+	float: right;
+	width: 235px;
+	min-height: 700px;
+	background: #e7f7ff;
+	margin-left:10px;
+	border-right: 1px solid #ccc; /*cursor:e-resize;*/
+}
+.main-wrap {
+	margin-left: 10px;
+	min-height: 100%;
+	
+}
+
+
+.sidebar-content {
+	padding-top: 5px;
+}
+
+/* main */
+.crumb-wrap {
+	height: 40px;
+	line-height: 39px;
+	border-bottom: 1px solid #e5e5e5;
+	background: #f5f5f5;
+}
+
+.crumb-list {
+	padding-left: 12px;
+}
+
+.crumb-list .icon-font {
+	margin-right: 5px;
+}
+
+.search-wrap {
+	padding: 15px 0;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.search-tab tr {
+	line-height: 35px;
+}
+
+.search-tab th {
+	text-align: right;
+	padding-right: 10px;
+	font-weight: normal;
+}
+
+.search-tab td {
+	padding: 0 5px;
+}
+
+.common-text {
+	height: 23px;
+	width:220px;
+	line-height: 23px;
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 5px;
+}
+.common-text1 {
+	height: 23px;
+	width:668px;
+	line-height: 23px;
+	padding: 2px 4px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 5px;
+}
+
+.datetime{
+	
+	width:100px;
+}
+
+.result-wrap {
+	padding: 10px 20px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.result-title {
+	line-height: 35px;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+
+.comment-title {
+	line-height: 35px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.result-list a {
+	margin-right: 15px;
+}
+
+.result-list i {
+	padding-right: 5px;
+}
+
+.result-tab {
+	border-collapse: collapse;
+	border: 1px solid #ddd;
+}
+
+.result-tab th {
+	font-weight: normal;
+	font-size: 15px;
+	text-align: left;
+	background: url(../images/tab-thbg.png) #f9f9f9 0 bottom repeat-x;
+}
+
+.result-tab th, .result-tab td {
+	padding: 5px;
+	border-bottom: 1px solid #ddd;
+	border-right: 1px solid #e1e1e1;
+}
+
+.result-tab tr {
+	line-height: 35px;
+}
+
+.result-tab th.tc, .result-tab td.tc {
+	text-align: center;
+}
+
+.result-tab tr:nth-child(odd) {
+	background: #f9f9f9;
+}
+
+.result-tab tr:hover {
+	background: #f1f1f1;
+}
+
+.result-tab tr.even-tr {
+	background: #e9fff2;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>稿件审核或修改</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/productPlat.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+<style type="text/css">
+.form-group {
+	margin-left: 0px;
+}
+</style>
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/平台.png"
+					style="height: 32px; display: inline-block;" /><span
+					style="padding-left: 5px;">生产平台</span></a>
+				<!--<div style="margin-top: 20px;font-size: 20px;margin-left: 500px;position: relative;">
+					<a  href="#" style="text-decoration: none;position: absolute;"><span>生产平台</span></a>
+				<a  href="#" style="text-decoration: none;margin-left: 130px;"><span>分发平台</span></a>
+				</div>-->
+
+
+				<ul class="nav navbar-nav "
+					style="margin-left: 450px; font-size: 20px; position: absolute; margin-top: 10px;">
+					<li><a href="#"><span>通用平台</span></a></li>
+					<li><a href="#"><span>分发平台</span></a></li>
+					<li style="margin-left: 350px; font-size: 14px;" id="changeUser"><a
+						href=""><span class="glyphicon glyphicon-user"></span> admin</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-envelope"
+							style="margin-left: 5px;"></span><br />消息</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-edit"
+							style="margin-left: 20px;"></span><br />修改密码</a></li>
+					<li style="margin-left: 0px; font-size: 14px; margin-top: -14px;"><a
+						href=""><span class="glyphicon glyphicon-share"
+							style="margin-left: 20px;"></span><br /> 安全退出</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+
+		<ul class="nav">
+			<li class=""><a href="index.html"><span
+					class="glyphicon glyphicon-dashboard"></span> 导航菜单栏</a></li>
+			<li class="parent ">
+				<ul class="children" id="sub-item-1">
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件上传
+					</a></li>
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件制作
+					</a></li>
+					<li><a class="" href="#"> <span
+							class="glyphicon glyphicon-share-alt"></span> 稿件审核
+					</a></li>
+
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!--/.sidebar-->
+
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<div class="row">
+			<ol class="breadcrumb">
+				<li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+				<li class="active">稿件审核或修改</li>
+			</ol>
+		</div>
+
+		<div class="row"
+			style="margin: 20px auto; padding: 10px; padding-top: 0px; background-color: #ffffff;">
+			<div class="panel panel-default">
+				<div class="panel-heading">稿件审核或修改</div>
+				<div class="panel-body">
+					<form action="">
+						<!-- 编辑器 -->
+						<div class="form-group">编辑器放置处</div>
+
+						<div class="form-group">
+							<textarea style="width: 100%; height: 80px;" placeholder="请填写审核意见"></textarea>
+						</div>
+
+						<div class="form-group text-right">
+							<button type="button" class="btn btn-default">手机预览</button>
+							<button type="button" class="btn btn-default">保存</button>
+							<button type="button" class="btn btn-default">同意</button>
+							<button type="button" class="btn btn-default">驳回</button>
+						</div>
+					</form>
+
+					<hr style="margin: 10px auto; border-top: 2px dotted #767676;">
+
+					<div class="checkHistory">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th colspan="4" style="text-align: center; font-size: 18px;">流程记录</th>
+								</tr>
+								<tr>
+									<th>用户名</th>
+									<th>操作</th>
+									<th>意见</th>
+									<th>时间</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>张三</td>
+									<td>初审同意</td>
+									<td>好</td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

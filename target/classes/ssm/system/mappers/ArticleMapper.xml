@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.system.dao.ArticleDao">
+
+    <resultMap type="Article" id="ArticleResult">
+        <result property="id" column="id"/>
+        <result property="localUrl"  column="localUrl"/>
+        <result property="externalUrl"  column="externalUrl"/>
+        <result property="size"  column="size"/>
+        <result property="title"  column="title"/>
+        <result property="classification"  column="classification"/>
+        <result property="mediumTag"  column="mediumTag"/>
+        <result property="brief"  column="brief"/>
+        <result property="type"  column="type"/>
+        <result property="author"  column="author"/>
+        <result property="Pending"  column="Pending"/>
+        <result property="updateTime"  column="updateTime"/>
+        <result property="createTime"  column="createTime"/>
+    </resultMap>
+    
+    <sql id="column_list">
+   		 id,localUrl,externalUrl,size,title,classification,mediumTag,brief,type,author,Pending,updateTime,createTime
+    </sql>
+    
+  <insert id="addArticle" parameterType="Article">
+        insert into tb_article(
+         id,localUrl,externalUrl,size,title,classification,mediumTag,brief,type,author,Pending,updateTime,createTime
+        ) 
+        values (
+         #{localUrl},#{password},#{realname},#{userArea},#{userType},
+         #{userState},#{roleIds},now()
+		)
+  </insert>
+    
+    <update id="updateUser" parameterType="User">
+        update tb_user
+        <set>
+            <if test="username != null">
+                username = #{username},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="realname != null">
+                realname = #{realname},
+            </if>
+            <if test="userArea != null">
+                userArea = #{userArea},
+            </if>
+            <if test="userType != null">
+                userType = #{userType},
+            </if>
+            <if test="userState != null">
+                userState = #{userState},
+            </if>
+            <if test="roleIds != null">
+                roleIds = #{roleIds},
+            </if>
+            updateTime = now()
+        </set>
+         where id = #{id}
+    </update>
+	
+  <delete id="deleteUserById" parameterType="Integer">
+    delete from tb_user
+    where id = #{id}
+  </delete>
+	
+	
+</mapper>

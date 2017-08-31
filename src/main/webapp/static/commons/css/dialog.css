@@ -1,0 +1,114 @@
+.mask {
+	position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.75);
+    z-index: 9998;
+	}
+.dialog_wrp {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+	}
+.dialog {
+    overflow: visible;
+    border: 0;
+    background-color: #fff;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+.dialog_hd {
+    position: relative;
+    border-bottom-width: 0;
+    background-color: #f4f5f9;
+    background-image: -moz-linear-gradient(top,#f4f5f9 0,#f4f5f9 100%);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#f4f5f9),to(#f4f5f9));
+    background-image: -webkit-linear-gradient(top,#f4f5f9 0,#f4f5f9 100%);
+    background-image: -o-linear-gradient(top,#f4f5f9 0,#f4f5f9 100%);
+    background-image: linear-gradient(to bottom,#f4f5f9 0,#f4f5f9 100%);
+	}
+.dialog_hd h3 {
+    padding-left: 20px;
+    margin: 0;
+    font-weight: 400;
+	font-size: 16px;
+    font-style: normal;
+	color: #222;
+    line-height: 52px;
+}
+.pop_closed {
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: 20px;
+    width: 16px;
+    height: 16px;
+    line-height: 999em;
+    overflow: hidden;
+	background: url('images/tabs_icons.png') no-repeat -34px center;
+}
+.dialog_bd {
+	max-height: 480px;
+    overflow-y: auto;
+    padding: 20px;
+}
+.msg_dialog .dialog_bd {
+    max-height: 385px;
+    padding: 66px 45px 108px;
+}
+.page_msg.simple {
+    text-align: center;
+}
+.page_msg .page_inner {
+	display: inline-block;
+    text-align: left;
+    min-width: 55%;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+	padding: 12px 70px;
+	position: relative;
+}
+
+.page_msg .msg_icon_wrapper {
+    float: left;
+    margin-right: 10px;
+    font-size: 0;
+}
+.page_msg h4 {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+	line-height: 1.6;
+}
+.page_msg p {
+    font-size: 14px;
+    color: #8d8d8d;
+	line-height: 1.6;
+}
+
+.page_msg .msg_content {
+    padding-top: 0;
+	overflow: hidden;
+	}
+
+.dialog_ft {
+    margin: 0;
+    padding: 16px 0;
+    background-color: #f4f5f9;
+    text-align: center;
+    border-top: 1px solid transparent;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.dialog_ft .btn {
+    margin-left: .3em;
+    margin-right: .3em;
+}

@@ -1,0 +1,71 @@
+@media (min-width:768px) {
+	.checktable {
+		width: 700px;
+	}
+}
+#name {
+	max-width: 70%;
+}
+
+#filetype {
+	max-width: 100px;
+	display: inline-block;
+}
+
+#description {
+	max-width: 70%;
+	display: inline-block;
+}
+.navigatelist {
+	width: 100%;
+}
+label {
+	margin-right: 10px;
+}
+.form-group {
+	margin-left: 20px;
+}
+.btn-default {
+	background-color: #6495ed;
+	color: white;
+}
+.dropdown {
+	display: inline-block;
+}
+.dropdown-toggle {
+	background-color: white;
+	width: 100px;
+}
+#selectfile {
+	position: relative;
+	top: -60px;
+	background-color: #dcdcdc;
+	margin-left: 20px;
+	display:inline-block;
+}
+#checkinfomation input {
+	max-width: 100px;
+	display: inline-block;
+}
+#checkstatus {
+	max-width: 60%;
+	min-width: 40%;
+	display: inline-block;
+}
+#checkform {
+	border: 1px solid #dcdcdc;
+	margin-top: 10px;
+}
+td .btn-default{
+	background-color: #dcdcdc;
+	color: black;
+}
+#tabhead {
+	background-color: #f1f4f7;
+	border-color: white;
+	border-width: 1px;
+	border-top-style: outset;
+	border-right-style: outset;
+	border-left-style: outset;
+	margin-top: 5px;
+}

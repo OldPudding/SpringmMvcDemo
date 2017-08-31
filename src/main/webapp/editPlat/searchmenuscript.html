@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>稿件审核</title>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<link href="css/productPlat.css" rel="stylesheet">
+
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<script src="js/respond.min.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#sidebar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="img/平台.png" style="height: 32px;display:inline-block;"/><span style="padding-left: 5px;">生成平台</span></a>
+				<!--<div style="margin-top: 20px;font-size: 20px;margin-left: 500px;position: relative;">
+					<a  href="#" style="text-decoration: none;position: absolute;"><span>生产平台</span></a>
+				<a  href="#" style="text-decoration: none;margin-left: 130px;"><span>分发平台</span></a>
+				</div>-->
+
+
+				<ul class="nav navbar-nav " style="margin-left: 450px;font-size: 20px;position: absolute;margin-top: 10px;">
+					<li ><a  href="#"><span>通用平台</span></a></li>
+					<li ><a  href="#"><span>分发平台</span></a></li>
+					<li style="margin-left: 350px;font-size: 14px;" id="changeUser"><a href=""><span class="glyphicon glyphicon-user"></span>   admin</a></li>
+					<li style="margin-left: 0px;font-size: 14px; margin-top: -14px;"><a href=""><span class="glyphicon glyphicon-envelope" style="margin-left: 5px;"></span><br />消息</a></li>
+					<li style="margin-left: 0px;font-size: 14px;margin-top: -14px;"><a href=""><span class="glyphicon glyphicon-edit" style="margin-left: 20px;"></span><br />修改密码</a></li>
+					<li style="margin-left: 0px;font-size: 14px;margin-top: -14px;"><a href=""><span class="glyphicon glyphicon-share" style="margin-left: 20px;"></span><br /> 安全退出</a></li>
+				</ul>
+
+
+
+			</div>
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+
+		<ul class="nav ">
+			<li class=""><a href="index.html"><span class="glyphicon glyphicon-dashboard"></span> 导航菜单栏</a></li>
+			<!--<li role="presentation" class="divider"></li>-->
+			<li class="parent ">
+				<ul class="children" id="sub-item-1">
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 稿件上传
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 稿件制作
+						</a>
+					</li>
+					<li>
+						<a class="" href="#">
+							<span class="glyphicon glyphicon-share-alt"></span> 稿件审核
+						</a>
+					</li>
+
+				</ul>
+			</li>
+<!-- 			<li class=""><a href="index.html"><span class="glyphicon glyphicon-lock"></span> 用户权限管理</a></li> -->
+	</div><!--/.sidebar-->
+
+	<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+		<ul id="articleCheck" class="nav nav-tabs">
+			<li><a href="#" data-toggle="tab" style="padding:10px">文字稿件搜索</a></li>
+		</ul>
+		<div class="checktable">
+			<div>
+				<form role="form" style="margin-top:10px;">
+					<div class="form-group" id="checkinfomation">
+					    <label for="name2">名称</label>
+					    <input type="text" class="form-control" id="name2">
+					    <label for="filetype2" style="margin-left:50px;">标签</label>
+					    <input type="text" class="form-control" id="filetype2">
+					    <label for="others" style="margin-left:50px;">其他</label>
+					    <input type="text" class="form-control" id="others">
+					</div>
+					<div style="margin-right:auto;">
+						<button type="submit" class="btn btn-default" style="width: 100px;float:right;">检索</button>
+						<button type="button" class="btn btn-default" style="width: 100px;float:right;">重置</button>
+					</div>
+				</form>
+			</div>
+			<div style="padding-top:50px;">
+				<table class="table table-bordered">
+				  <thead style="background-color:aliceblue;">
+				    <tr>
+				      <th>序号</th>
+				      <th>稿件ID</th>
+				      <th>稿件名称</th>
+				      <th>创建时间</th>
+				      <th>修改时间</th>
+				      <th>备注</th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <td>1</td>
+				      <td>asdfasdasd</td>
+				      <td>asdfasd</td>
+				      <td>2016年11月1日</td>
+				      <td></td>
+				      <td></td>
+				    </tr>
+				    <tr>
+				      <td>2</td>
+				      <td>12345678</td>
+				      <td>inetjjjnent</td>
+				      <td>2017年1月1日</td>
+				      <td></td>
+				      <td></td>
+				    </tr>
+				  </tbody>
+				</table>
+			</div>
+			<button type="submit" class="btn btn-default" style="width: 100px;float:right;">确定</button>
+		</div>
+
+	</div>
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){
+		        $(this).find('em:first').toggleClass("glyphicon-minus");
+		    });
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>
+</body>
+
+</html>

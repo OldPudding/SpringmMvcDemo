@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ssm.system.dao.UserDao">
+
+    <resultMap type="User" id="UserResult">
+        <result property="id" column="id"/>
+        <result property="username"  column="username"/>
+        <result property="password"  column="password"/>
+        <result property="realname"  column="realname"/>
+        <result property="userArea"  column="userArea"/>
+        <result property="userType"  column="userType"/>
+        <result property="userState"  column="userState"/>
+        <result property="roleIds"  column="roleIds"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="createTime" column="createTime"/>
+    </resultMap>
+    
+    <sql id="column_list">
+   		 id,username,password,realname,userArea,userType,userState,roleIds,updateTime,createTime
+    </sql>
+
+	<select id="getByUsername" parameterType="String" resultMap="UserResult">
+         select
+          <include refid="column_list"/> 
+         from tb_user
+         where
+         username = #{username}
+    </select>
+	
+</mapper>
